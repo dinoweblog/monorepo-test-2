@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "lerna": "^7.3.0"
+  },
+  "scripts": {
+    "start": "lerna exec --scope @workspace/app -- yarn start"
+  }
+}
